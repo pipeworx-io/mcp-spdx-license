@@ -1,0 +1,66 @@
+[
+  {
+    "name": "list_licenses",
+    "description": "List SPDX licenses with optional filters (OSI-approved, FSF Free/Libre, deprecated).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "osiApproved": {
+          "type": "boolean"
+        },
+        "fsfLibre": {
+          "type": "boolean"
+        },
+        "deprecated": {
+          "type": "boolean",
+          "description": "Include deprecated. Default false."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_license",
+    "description": "Get metadata + descriptors for one SPDX license id (e.g. \"MIT\", \"Apache-2.0\", \"GPL-3.0-or-later\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "get_license_text",
+    "description": "Get the full license text for a single SPDX license id (returns standard text + cross-references).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "search",
+    "description": "Substring search across SPDX id and full license name (case-insensitive).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  }
+]
