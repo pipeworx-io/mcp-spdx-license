@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-spdx-license",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SPDX License List MCP",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "spdx-license",
     "gatewaySlug": "spdx-license",
-    "sourceHash": "v1-e3a25ddc39fa01ecb60163368506dda4e2cd353bf6bc657107f89f4637f4f4cb",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-98ae14e06a8880be8f98fdcc344b527945dfb5c67baeff1869927bf348949471",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
